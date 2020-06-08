@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const Place = model('Place', {
+const Lugares = model('Lugares', {
   name: {
     type: String,
     required: true,
@@ -19,4 +19,4 @@ const Place = model('Place', {
   },
 })
 
-module.exports = Place
+module.exports = Lugares

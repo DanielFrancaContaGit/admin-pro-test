@@ -8,7 +8,7 @@ const router = new Router()
 const serializer = (place) => {
   return place.toObject({ versionKey: false })
 }
-
+ 
 router.get('/', async (req, res) => {
   const places = await paginate(Place.find({
     userId: req.params.userId,
